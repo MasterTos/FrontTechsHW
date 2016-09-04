@@ -1,0 +1,22 @@
+{
+    "name": "FrontTechsHW1",
+    "version": "1.0.0",
+    "description": "Code of front techs homework #1",
+    "main": "index.html",
+    "scripts": {
+        "start": "node_modules/http-server/bin/http-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MasterTos/FrontTechsHW.git"
+    },
+    "author": "Wisit Tipchuen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MasterTos/FrontTechsHW/issues"
+    },
+    "homepage": "https://github.com/MasterTos/FrontTechsHW#readme",
+    "devDependencies": {
+        "http-server": "^0.9.0"
+    }
+}
