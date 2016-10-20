@@ -3,7 +3,7 @@ var path = require('path');
 
 var config = {
     entry: {
-        hello: path.join(__dirname, 'src', 'hello.js'),
+        hello: path.join(__dirname, 'src', 'app.js')
     },
     module: {
         loaders: [{
@@ -11,41 +11,13 @@ var config = {
             include: path.join(__dirname, 'src'),
             loader: 'babel-loader',
             query: {
-                presets: ['es2015']
+                presets: ['es2015', 'react']
             }
         }]
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: "hello.js"
-    },
-    devServer: {
-        historyApiFallback: true,
-        inline: true
-    }
-};
-
-module.exports = config;
-var webpack = require('webpack');
-var path = require('path');
-
-var config = {
-    entry: {
-        hello: path.join(__dirname, 'src', 'hello.js'),
-    },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            include: path.join(__dirname, 'src'),
-            loader: 'babel-loader',
-            query: {
-                presets: ['es2015']
-            }
-        }]
-    },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: "hello.js"
+        filename: "app.js"
     },
     devServer: {
         historyApiFallback: true,
