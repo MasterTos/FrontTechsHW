@@ -46,6 +46,10 @@ const Pokemons = (props) => {
     )
 }
 
+const Image = (props) => (
+    <img src={props.pic} alt=""/>
+)
+
 const PokemonDetail = (props) => (
     <tr>
         <th>{props.number}</th>
@@ -67,37 +71,37 @@ const App = () => {
             rarity: "Rarity"
         }, {
             number: "#001",
-            pic: "",
+            pic: <Image pic="/img/001.png"/>,
             name: "Bulbasaur",
             type: "Grass / Poison",
             rarity: "Uncommon"
         }, {
             number: "#002",
-            pic: "",
+            pic: <Image pic="/img/002.png"/>,
             name: "Ivysaur",
             type: "Grass / Poison",
             rarity: "Very Rare"
         }, {
             number: "#003",
-            pic: "",
+            pic: <Image pic="/img/003.png"/>,
             name: "Venusaur",
             type: "Grass / Poison",
             rarity: "Super Rare"
         }, {
             number: "#004",
-            pic: "",
+            pic: <Image pic="/img/004.png"/>,
             name: "Charmander",
             type: "Fire",
             rarity: "Rare"
         }, {
             number: "#005",
-            pic: "",
+            pic: <Image pic="/img/005.png"/>,
             name: "Charmeleon",
             type: "Fire",
             rarity: "Super Rare"
         }, {
             number: "#006",
-            pic: "",
+            pic: <Image pic="/img/006.png"/>,
             name: "Charizard",
             type: "Fire",
             rarity: "Super Rare"
