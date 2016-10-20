@@ -17,7 +17,7 @@ var config = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: "app.js"
+        filename: "js/app.js"
     },
     devServer: {
         historyApiFallback: true,
